@@ -38,7 +38,7 @@ cd <repo_folder>
 ### 2. Start environment (QUICK START)
 ```bash
 sh env_setup.sh
-./venv/bin/python availability_monitor.py
+./venv/bin/python availability_monitor.py <path_to_config_yaml>
 
 ```
 
