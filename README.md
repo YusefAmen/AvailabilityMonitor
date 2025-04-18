@@ -105,7 +105,7 @@ sh env_setup.sh
 **Problem:** Request logs lacked timestamps and structure.
 **Fix:**
 ```python
-print(f"[HTTP REQUEST START] {time.strftime('%Y-%m-%d %H:%M:%S')} | Method: {method} | URL: {url} | Headers: {headers or '{}'} | Body: {body or '{}'}")
+print(f"[HTTP REQUEST START] {time.strftime('%Y-%m-%d %H:%M:%S')} | Method: {method} | URL: {url}")
 ...
 print(f"[HTTP REQUEST END] {time.strftime('%Y-%m-%d %H:%M:%S')} | Elapsed: {elapsed}s | Status: {response.status_code}")
 ```
@@ -120,11 +120,13 @@ print(f"[HTTP REQUEST END] {time.strftime('%Y-%m-%d %H:%M:%S')} | Elapsed: {elap
 
 ### 8. Async Http and Sleep
 **Problem:** As it scales to handling more urls inconsistent timing can occur and also the requests in general are blocking taking up time and limiting how many requests would be able to be made.
+
 **Fix:** To allow consistency of timing window and to improve efficiency. 
 
 ## 9. Added structured logging
 **Problem** Hard to review process especially wiht async if there arent structured logs to check. Also allows for error catches without letting the script fail completely.
-**Fix** 
+
+**Fix** using logging import to make structured logs and timestamps.
 
 ---
 
