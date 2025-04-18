@@ -99,7 +99,7 @@ sh env_setup.sh
 
 ### 4. No Defaults for Requests
 **Problem:** Missing method, headers, or body fields caused crashes.
-**Fix:** Added default values: method defaults to `GET`, headers/body default to empty dictionaries. --- Also included extended sample.yaml with additional test surface for other request types and scenarios to test reobustness of script.
+**Fix:** Added default values: method defaults to `GET`, headers/body default to empty dictionaries. --- Also included extended `test_sample_extended.yaml` with additional test surface for other request types and scenarios to test reobustness of script.
 
 ### 5. Logging Improvements
 **Problem:** Request logs lacked timestamps and structure.
