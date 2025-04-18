@@ -7,7 +7,9 @@ The original code had issues with YAML loading, request defaults, port handling,
 
 ---
 
-## Files to include: requirements.in, availability_monitor.py, env_setup.sh + your own sample.yaml file
+## Files to include: 
+- requirements.in, availability_monitor.py, env_setup.sh
+- + your own sample.yaml file
 
 ## Requirements
 - Python 3.7+
