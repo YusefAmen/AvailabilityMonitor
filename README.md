@@ -135,7 +135,7 @@ print(f"[HTTP REQUEST END] {time.strftime('%Y-%m-%d %H:%M:%S')} | Elapsed: {elap
 - Log results to JSONL or use persistent storage (e.g., SQLite)
 - Improve testability with unit tests and assertions
 - Add log rotation
-- Implement prioritization or dynamic endpoint scheduling??
+- Implement prioritization or dynamic endpoint scheduling. if failed check again soon?? 
 
 ---
 
