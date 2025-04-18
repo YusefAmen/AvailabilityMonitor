@@ -1,15 +1,17 @@
 # Fetch Rewards Take-Home SRE Challenge
 
 ## Overview
-This project is a Python-based service monitor (availability_monitor.py) that checks the health of specified HTTP endpoints every 15 seconds. It tracks status codes, response times, and calculates the availability percentage of each unique domain. The script uses `requests`, `PyYAML`, and `defaultdict`, and includes robust error handling and logging.
+This project is a Python-based service monitor (availability_monitor.py) that checks the health of specified HTTP endpoints every 15 seconds. It tracks status codes, response times, and calculates the availability percentage of each unique domain. The script uses `requests`, `aiohttp`, `PyYAML`, and `defaultdict`, and includes robust error handling and logging.
 
-The original code had issues with YAML loading, request defaults, port handling, and lacked clear visibility into request timing and behavior. This updated version fixes those problems and introduces improved structure and logging.
+The original code had issues with YAML loading, request defaults, port handling, and lacked clear visibility into request timing and behavior. This updated version fixes those problems; leverages aysnc libraries for scaling and introduces improved structure and logging for observability.
 
 ---
 
 ## Files to include: 
-- requirements.in, availability_monitor.py, env_setup.sh
-- + your own sample.yaml file
+- requirements.in (provided)
+- availability_monitor.py (provided, the monitoring script)
+- env_setup.sh (provided, the setup for your environment)
+- Your own custom sample.yaml file
 
 ## Requirements
 - Python 3.7+
