@@ -131,6 +131,7 @@ print(f"[HTTP REQUEST END] {time.strftime('%Y-%m-%d %H:%M:%S')} | Elapsed: {elap
 ---
 
 ## Potential Next Steps
+- Need to add rate limiting algorithm potentially to avoid program doiing to many requests.
 - Use a hash map or dictionary to track endpoint check history
 - Log results to JSONL or use persistent storage (e.g., SQLite)
 - Improve testability with unit tests and assertions
